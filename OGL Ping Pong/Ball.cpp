@@ -121,8 +121,6 @@ namespace game::objects
 
         this->pos += velocity * (MOVE_SPEED * static_cast<float>(mylib::GLOBAL_VARS.getTimeOffset()) * 100);
 
-        //std::clog << "pos: " << glm::to_string(pos) << std::endl;
-
         view = camera->getViewMatrix();
         projection = camera->getProjection();
     }

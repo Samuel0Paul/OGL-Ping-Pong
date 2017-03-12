@@ -74,7 +74,7 @@ namespace game
             << std::endl;
         std::clog << "\nvel: " << glm::to_string(ball->velocity) << std::endl;
 
-        if ((ball_xp > block_xn && ball_xp < block_xp) && (ball_yp < block_yp && ball_yn > block_yn))
+        if ((ball_xp > block_xn && ball_xp < block_xp) && (ball_yn < block_yp && ball_yp > block_yn))
         {
             auto &delta = tmp[0];
             delta = (ball->pos.y - block->pos.y) / (block->getHeight() / 2);
@@ -141,32 +141,7 @@ namespace game
             << std::endl;
         std::clog << "\nvel: " << glm::to_string(ball->velocity) << std::endl;
 
-        //auto &delta = tmp[0];
-        //delta = (ball->pos.y - block->pos.y) / (block->getHeight() / 2);
-        //
-        //// ball hitting the "front side" and in the bounds of the front side
-        //// Zone B:
-        //if ((ball_xn < block_xp && ball_xn > block_xn) && (ball_yp < block_yp && ball_yn > block_yn))
-        //{
-        //    // zone 1 - 
-        //    if (ball->pos.y > block->pos.y) {
-        //        ball->velocity *= -1;
-        //        ball->velocity.y += delta * ball->velocity.y;
-        //        ball->velocity.x += (1 - delta) * ball->velocity.x;
-        //    }
-        //    // zone 2 - 
-        //    if (ball->pos.y < block->pos.y) {
-        //        ball->velocity *= -1;
-        //        ball->velocity.y -= (-delta) * ball->velocity.y;
-        //        ball->velocity.x -= (1 - (-delta)) * ball->velocity.x;
-        //    }
-        //}
-        //
-        //ball->velocity = glm::normalize(ball->velocity);
-
-        // ball hitting the "front side" and in the bounds of the front side
-        // Zone B:
-        if ((ball_xn < block_xp && ball_xn > block_xn) && (ball_yp < block_yp && ball_yn > block_yn))
+        if ((ball_xn < block_xp && ball_xn > block_xn) && (ball_yn < block_yp && ball_yp > block_yn))
         {
             auto &delta = tmp[0];
             delta = (ball->pos.y - block->pos.y) / (block->getHeight() / 2);
