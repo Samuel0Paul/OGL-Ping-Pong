@@ -83,7 +83,10 @@ namespace game
             std::clog << "\ndelta: " << delta
                 << "\nnormal: " << glm::to_string(normal) << std::endl;
 
-            ball->velocity = glm::reflect(ball->velocity, normal);
+            if (ball->velocity.x > 0)
+            {
+                ball->velocity = glm::reflect(ball->velocity, normal);
+            }
         }
 
         ball->velocity = glm::normalize(ball->velocity);
@@ -172,7 +175,9 @@ namespace game
             std::clog << "\ndelta: " << delta
                 << "\nnormal: " << glm::to_string(normal) << std::endl;
 
-            ball->velocity = glm::reflect(ball->velocity, normal);
+            if (ball->velocity.x < 0) {
+                ball->velocity = glm::reflect(ball->velocity, normal);
+            }
         }
 
         ball->velocity = glm::normalize(ball->velocity);
