@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\header defs">
+      <UniqueIdentifier>{4277ff19-0f23-412f-a2c1-e00cbbcbceb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\mylib">
+      <UniqueIdentifier>{c4887cae-7c29-43a3-9661-38cd41cb8fa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game">
+      <UniqueIdentifier>{e5a87921-975f-4de9-aafe-7b0331c497ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game">
+      <UniqueIdentifier>{f7951085-6dd0-4482-a6fd-9e0966966495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shaders">
+      <UniqueIdentifier>{696c6ed7-942f-4ba8-bf05-1d92a7e04a1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shaders\ping pong">
+      <UniqueIdentifier>{698f58ce-a307-4a28-b125-c60aa5c70f11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shaders\ping pong\block">
+      <UniqueIdentifier>{5986d2f4-6781-46f5-a640-0e16d9f934db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shaders\ping pong\ball">
+      <UniqueIdentifier>{2044b077-7f32-4825-a568-78886047f823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\objects">
+      <UniqueIdentifier>{ba4911cf-aae0-4a1c-8bc0-035a226b9d04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\objects">
+      <UniqueIdentifier>{93525c4d-1573-4001-92d6-5d819f8272d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="shaders\ping pong\block\block.frag">
+      <Filter>Resource Files\shaders\ping pong\block</Filter>
+    </None>
+    <None Include="shaders\ping pong\block\block.vert">
+      <Filter>Resource Files\shaders\ping pong\block</Filter>
+    </None>
+    <None Include="shaders\ping pong\ball\ball.frag">
+      <Filter>Resource Files\shaders\ping pong\ball</Filter>
+    </None>
+    <None Include="shaders\ping pong\ball\ball.vert">
+      <Filter>Resource Files\shaders\ping pong\ball</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.h">
+      <Filter>Header Files\mylib</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files\mylib</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraController.h">
+      <Filter>Header Files\mylib</Filter>
+    </ClInclude>
+    <ClInclude Include="FPSCamera.h">
+      <Filter>Header Files\mylib</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files\mylib</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files\mylib</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files\mylib</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files\mylib</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Header Files\mylib</Filter>
+    </ClInclude>
+    <ClInclude Include="PingPongGame.h">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="OrthoCamera.h">
+      <Filter>Header Files\mylib</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>Header Files\game\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Ball.h">
+      <Filter>Header Files\game\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerRunner.h">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Source Files\header defs</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\header defs</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraController.cpp">
+      <Filter>Source Files\header defs</Filter>
+    </ClCompile>
+    <ClCompile Include="FPSCamera.cpp">
+      <Filter>Source Files\header defs</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Source Files\header defs</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files\header defs</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files\header defs</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files\header defs</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Source Files\header defs</Filter>
+    </ClCompile>
+    <ClCompile Include="PingPongGame.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="OrthoCamera.cpp">
+      <Filter>Source Files\header defs</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>Source Files\game\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Ball.cpp">
+      <Filter>Source Files\game\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerRunner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
